@@ -1,0 +1,16 @@
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log opened at 2017-09-10 18:38:24
+project --topLevelPackage com.domain --projectName "MySpringRooApp" --java 8 --packaging JAR
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log closed at 2017-09-10 18:38:25
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log opened at 2017-09-10 18:38:29
+hint
+jpa setup --database MYSQL --provider HIBERNATE 
+hint
+entity jpa --class ~.domain.Users
+hint
+field string --fieldName username --notNull --unique 
+field string --fieldName Password --notNull
+field string --fieldName  email
+hint
+web mvc setup 
+web mvc all --package ~.web
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log closed at 2017-09-10 19:13:42
